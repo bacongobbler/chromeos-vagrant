@@ -47,8 +47,6 @@ echo '=== GENERATE CHROMIUM SSH KEY ==='
 ssh-keygen -t rsa -b 1024 -C "$USER@$HOSTNAME" -f $HOME/.ssh/chromium -N ''
 
 echo '=== INSTALL KEYCHAIN ==='
-## TODO: is it better to follow their order, so folks know what's going on
-##       or better to batch up the apt-get instructions?
 sudo apt-get install -y keychain
 
 echo '=== FIX UMASK ==='
