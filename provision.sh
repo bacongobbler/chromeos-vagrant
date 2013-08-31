@@ -61,8 +61,7 @@ cat >> $HOME/.ssh/known_hosts<<SSH1
 SSH1
 
 echo '=== INSTALLING CHROMIUMOS ==='
+echo '=== You might want to grab a coffee ==='
 cd $HOME/chromiumos
 repo init -u https://git.chromium.org/git/chromiumos/manifest.git --repo-url https://git.chromium.org/git/external/repo.git
 repo sync
-
-echo '=== HAPPY HACKING TO YOU ==='
