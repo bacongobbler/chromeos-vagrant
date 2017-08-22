@@ -27,6 +27,8 @@ sudo apt-get update
 
 echo '=== INSTALL GIT ==='
 sudo apt-get install -y git-core gitk git-gui subversion curl
+git config --global user.name "A Vagrant box"
+git config --global user.email "vagrant@localhost"
 
 echo '=== INSTALL DEPOT TOOLS ==='
 cd $HOME
@@ -64,5 +66,5 @@ SSH1
 echo '=== INSTALLING CHROMIUMOS ==='
 echo '=== You might want to grab a coffee ==='
 cd $HOME/chromiumos
-repo init -u https://git.chromium.org/git/chromiumos/manifest.git --repo-url https://git.chromium.org/git/external/repo.git
+repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
 repo sync
