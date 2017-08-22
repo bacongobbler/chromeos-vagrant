@@ -34,6 +34,7 @@ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 ## http://dev.chromium.org/developers/how-tos/install-depot-tools specifically
 ## says to put depot_tools at the end of the path
 echo "PATH=\$PATH:\$HOME/depot_tools" >> $HOME/.bashrc
+PATH=$PATH:$HOME/depot_tools
 
 echo '=== FIX UP SUDO ==='
 ##http://www.chromium.org/tips-and-tricks-for-chromium-os-developers#TOC-Making-sudo-a-little-more-permissive
